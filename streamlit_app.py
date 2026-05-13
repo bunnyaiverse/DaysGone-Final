@@ -1,5 +1,5 @@
 """
-app.py  —  AI Security Lab v3.0  (Standalone, Render-Ready)
+app.py  — DaysGone - AI Security Lab  (Standalone, Render-Ready)
 OWASP LLM Top 10 | 10 Modules | 104 Named Attack Types
 """
 import sys, os, time, uuid, re, html
@@ -18,7 +18,7 @@ except ImportError as e:
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="AI Security Lab v3",
+    page_title="Days Gone - AI Security Lab",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -1018,7 +1018,7 @@ if st.session_state.queued_preset:
 # SIDEBAR
 # ══════════════════════════════════════════════════════════════════════════════
 with st.sidebar:
-    st.markdown("## 🛡️ AI Security Lab")
+    st.markdown("## 🛡️ Days Gone - AI Security Lab")
     st.markdown("**OWASP LLM Top 10 · v3.0**")
     st.caption("104 Named Attack Types · All 10 Modules")
     st.divider()
@@ -1100,7 +1100,7 @@ with tab_lab:
         st.markdown("""<div style='text-align:center;padding:50px 0;color:#6e7681;'>
             <div style='font-size:3em;'>🛡️</div>
             <div style='font-size:1.3em;font-weight:600;color:#c9d1d9;margin-top:12px;'>
-                AI Security Lab — OWASP LLM Top 10</div>
+                DaysGone - AI Security Lab — OWASP LLM Top 10</div>
             <div style='margin-top:8px;'>
                 10 modules · 104 named OWASP attack types · Real CVE references<br>
                 Select a module → pick an attack type → run the simulation</div>
@@ -1618,7 +1618,7 @@ with tab_learning:
     st.markdown("#### Export Report")
     recent = list(reversed(st.session_state.attack_log))[:25]
     report_lines = [
-        "# AI Security Lab Session Report",
+        "# Days Gone - AI Security Lab Session Report",
         "",
         f"- Total attacks in catalog: {COVERAGE_SUMMARY['total']}",
         f"- Chat-based attacks: {COVERAGE_SUMMARY['chat']}",
